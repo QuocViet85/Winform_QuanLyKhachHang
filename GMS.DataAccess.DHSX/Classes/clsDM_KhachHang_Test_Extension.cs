@@ -55,7 +55,7 @@ namespace GMS_Test
 		public bool InsertKhachHang()
 		{
 			SqlCommand scmCmdToExecute = new SqlCommand();
-			scmCmdToExecute.CommandText = "dbo.[pr_DM_KhachHang_Test_Insert]";
+			scmCmdToExecute.CommandText = "dbo.[pr_DM_KhachHang_Test_Insert_Extension]";
 			scmCmdToExecute.CommandType = CommandType.StoredProcedure;
 
 			// Use base class' connection object
@@ -100,7 +100,7 @@ namespace GMS_Test
 		public bool UpdateKhachHang()
 		{
 			SqlCommand scmCmdToExecute = new SqlCommand();
-			scmCmdToExecute.CommandText = "dbo.[pr_DM_KhachHang_Test_Update]";
+			scmCmdToExecute.CommandText = "dbo.[pr_DM_KhachHang_Test_Update_Extension]";
 			scmCmdToExecute.CommandType = CommandType.StoredProcedure;
 
 			// Use base class' connection object

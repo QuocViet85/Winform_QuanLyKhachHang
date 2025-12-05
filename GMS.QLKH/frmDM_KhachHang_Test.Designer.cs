@@ -32,12 +32,10 @@ namespace GMS.QLKH
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmDM_KhachHang_Test));
             this.TenKhachHang = new VSCM.Base.Controls.ucTextBox();
-            this.lbLoaiKhachHang = new VSCM.Base.Controls.ucTextBox();
             this.cmbLoaiKhachHang = new VSCM.Base.Controls.ucSearchLookupEdit();
             this.ucSearchLookupEdit1View = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.gridColumn1 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn2 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.lbTenKhachHang = new VSCM.Base.Controls.ucTextBox();
             this.fg = new VSCM.Base.Controls.ucFlexGrid();
             this.btnLuu = new VSCM.Base.Controls.ucButton();
             this.btnHuy = new VSCM.Base.Controls.ucButton();
@@ -45,11 +43,11 @@ namespace GMS.QLKH
             this.btnXoa = new VSCM.Base.Controls.ucButton();
             this.btnXacNhan = new VSCM.Base.Controls.ucButton();
             this.btnHuyXacNhan = new VSCM.Base.Controls.ucButton();
+            this.lbLoaiKhachHang = new VSCM.Base.Controls.ucLabel();
+            this.lbTenKhachHang = new VSCM.Base.Controls.ucLabel();
             ((System.ComponentModel.ISupportInitialize)(this.TenKhachHang.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lbLoaiKhachHang.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cmbLoaiKhachHang.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ucSearchLookupEdit1View)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lbTenKhachHang.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.fg)).BeginInit();
             this.SuspendLayout();
             // 
@@ -69,42 +67,15 @@ namespace GMS.QLKH
             this.TenKhachHang.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
             this.TenKhachHang.Properties.Name = "fProperties";
             this.TenKhachHang.Properties.Tag = "TenKhachHang";
-            this.TenKhachHang.Size = new System.Drawing.Size(327, 38);
+            this.TenKhachHang.Size = new System.Drawing.Size(235, 38);
             this.TenKhachHang.TabIndex = 9;
             this.TenKhachHang.EditValueChanged += new System.EventHandler(this.TenKhachHang_EditValueChanged);
-            // 
-            // lbLoaiKhachHang
-            // 
-            this.lbLoaiKhachHang.EditValue = "Loại khách hàng";
-            this.lbLoaiKhachHang.FieldGroup = "";
-            this.lbLoaiKhachHang.FieldName = "";
-            this.lbLoaiKhachHang.Location = new System.Drawing.Point(338, 1);
-            this.lbLoaiKhachHang.Margin = new System.Windows.Forms.Padding(5);
-            this.lbLoaiKhachHang.Name = "lbLoaiKhachHang";
-            this.lbLoaiKhachHang.Properties.Appearance.BackColor = System.Drawing.SystemColors.Highlight;
-            this.lbLoaiKhachHang.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 7.8F, System.Drawing.FontStyle.Bold);
-            this.lbLoaiKhachHang.Properties.Appearance.ForeColor = System.Drawing.Color.Transparent;
-            this.lbLoaiKhachHang.Properties.Appearance.Options.UseBackColor = true;
-            this.lbLoaiKhachHang.Properties.Appearance.Options.UseFont = true;
-            this.lbLoaiKhachHang.Properties.Appearance.Options.UseForeColor = true;
-            this.lbLoaiKhachHang.Properties.Appearance.Options.UseTextOptions = true;
-            this.lbLoaiKhachHang.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.lbLoaiKhachHang.Properties.AutoHeight = false;
-            this.lbLoaiKhachHang.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Style3D;
-            this.lbLoaiKhachHang.Properties.EditValueChangedDelay = 500;
-            this.lbLoaiKhachHang.Properties.EditValueChangedFiringMode = DevExpress.XtraEditors.Controls.EditValueChangedFiringMode.Buffered;
-            this.lbLoaiKhachHang.Properties.LookAndFeel.SkinName = "Office 2010 Silver";
-            this.lbLoaiKhachHang.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.lbLoaiKhachHang.Properties.Name = "fProperties";
-            this.lbLoaiKhachHang.Properties.ReadOnly = true;
-            this.lbLoaiKhachHang.Size = new System.Drawing.Size(325, 35);
-            this.lbLoaiKhachHang.TabIndex = 8;
             // 
             // cmbLoaiKhachHang
             // 
             this.cmbLoaiKhachHang.FieldGroup = "";
             this.cmbLoaiKhachHang.FieldName = "";
-            this.cmbLoaiKhachHang.Location = new System.Drawing.Point(338, 45);
+            this.cmbLoaiKhachHang.Location = new System.Drawing.Point(244, 45);
             this.cmbLoaiKhachHang.Margin = new System.Windows.Forms.Padding(5);
             this.cmbLoaiKhachHang.Name = "cmbLoaiKhachHang";
             this.cmbLoaiKhachHang.Properties.Appearance.BackColor = System.Drawing.SystemColors.Window;
@@ -120,7 +91,7 @@ namespace GMS.QLKH
             this.cmbLoaiKhachHang.Properties.NullText = "";
             this.cmbLoaiKhachHang.Properties.PopupView = this.ucSearchLookupEdit1View;
             this.cmbLoaiKhachHang.Properties.ValueMember = "ID_LoaiKhachHang";
-            this.cmbLoaiKhachHang.Size = new System.Drawing.Size(325, 36);
+            this.cmbLoaiKhachHang.Size = new System.Drawing.Size(240, 36);
             this.cmbLoaiKhachHang.TabIndex = 7;
             // 
             // ucSearchLookupEdit1View
@@ -148,34 +119,6 @@ namespace GMS.QLKH
             this.gridColumn2.Name = "gridColumn2";
             this.gridColumn2.Visible = true;
             this.gridColumn2.VisibleIndex = 0;
-            // 
-            // lbTenKhachHang
-            // 
-            this.lbTenKhachHang.Cursor = System.Windows.Forms.Cursors.Default;
-            this.lbTenKhachHang.EditValue = "Tên khách hàng";
-            this.lbTenKhachHang.FieldGroup = "";
-            this.lbTenKhachHang.FieldName = "";
-            this.lbTenKhachHang.Location = new System.Drawing.Point(3, 1);
-            this.lbTenKhachHang.Margin = new System.Windows.Forms.Padding(5);
-            this.lbTenKhachHang.Name = "lbTenKhachHang";
-            this.lbTenKhachHang.Properties.Appearance.BackColor = System.Drawing.SystemColors.Highlight;
-            this.lbTenKhachHang.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 7.8F, System.Drawing.FontStyle.Bold);
-            this.lbTenKhachHang.Properties.Appearance.ForeColor = System.Drawing.Color.Transparent;
-            this.lbTenKhachHang.Properties.Appearance.Options.UseBackColor = true;
-            this.lbTenKhachHang.Properties.Appearance.Options.UseFont = true;
-            this.lbTenKhachHang.Properties.Appearance.Options.UseForeColor = true;
-            this.lbTenKhachHang.Properties.AppearanceReadOnly.Options.UseTextOptions = true;
-            this.lbTenKhachHang.Properties.AppearanceReadOnly.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.lbTenKhachHang.Properties.AutoHeight = false;
-            this.lbTenKhachHang.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Style3D;
-            this.lbTenKhachHang.Properties.EditValueChangedDelay = 500;
-            this.lbTenKhachHang.Properties.EditValueChangedFiringMode = DevExpress.XtraEditors.Controls.EditValueChangedFiringMode.Buffered;
-            this.lbTenKhachHang.Properties.LookAndFeel.SkinName = "Office 2010 Silver";
-            this.lbTenKhachHang.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.lbTenKhachHang.Properties.Name = "fProperties";
-            this.lbTenKhachHang.Properties.ReadOnly = true;
-            this.lbTenKhachHang.Size = new System.Drawing.Size(325, 35);
-            this.lbTenKhachHang.TabIndex = 6;
             // 
             // fg
             // 
@@ -263,11 +206,47 @@ namespace GMS.QLKH
             this.btnHuyXacNhan.TabIndex = 16;
             this.btnHuyXacNhan.Text = "&Hủy XN";
             // 
-            // frmDM_KhachHang_Test_
+            // lbLoaiKhachHang
+            // 
+            this.lbLoaiKhachHang.Appearance.BackColor = System.Drawing.Color.DodgerBlue;
+            this.lbLoaiKhachHang.Appearance.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbLoaiKhachHang.Appearance.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lbLoaiKhachHang.Appearance.Options.UseBackColor = true;
+            this.lbLoaiKhachHang.Appearance.Options.UseFont = true;
+            this.lbLoaiKhachHang.Appearance.Options.UseForeColor = true;
+            this.lbLoaiKhachHang.FieldGroup = "";
+            this.lbLoaiKhachHang.FieldName = "";
+            this.lbLoaiKhachHang.Location = new System.Drawing.Point(244, 7);
+            this.lbLoaiKhachHang.Name = "lbLoaiKhachHang";
+            this.lbLoaiKhachHang.Padding = new System.Windows.Forms.Padding(50, 5, 50, 5);
+            this.lbLoaiKhachHang.Size = new System.Drawing.Size(240, 31);
+            this.lbLoaiKhachHang.TabIndex = 20;
+            this.lbLoaiKhachHang.Text = "Loại khách hàng";
+            // 
+            // lbTenKhachHang
+            // 
+            this.lbTenKhachHang.Appearance.BackColor = System.Drawing.Color.DodgerBlue;
+            this.lbTenKhachHang.Appearance.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbTenKhachHang.Appearance.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lbTenKhachHang.Appearance.Options.UseBackColor = true;
+            this.lbTenKhachHang.Appearance.Options.UseFont = true;
+            this.lbTenKhachHang.Appearance.Options.UseForeColor = true;
+            this.lbTenKhachHang.FieldGroup = "";
+            this.lbTenKhachHang.FieldName = "";
+            this.lbTenKhachHang.Location = new System.Drawing.Point(3, 7);
+            this.lbTenKhachHang.Name = "lbTenKhachHang";
+            this.lbTenKhachHang.Padding = new System.Windows.Forms.Padding(50, 5, 50, 5);
+            this.lbTenKhachHang.Size = new System.Drawing.Size(235, 31);
+            this.lbTenKhachHang.TabIndex = 19;
+            this.lbTenKhachHang.Text = "Tên khách hàng";
+            // 
+            // frmDM_KhachHang_Test
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(935, 588);
+            this.Controls.Add(this.lbLoaiKhachHang);
+            this.Controls.Add(this.lbTenKhachHang);
             this.Controls.Add(this.btnHuyXacNhan);
             this.Controls.Add(this.btnXacNhan);
             this.Controls.Add(this.btnXoa);
@@ -276,31 +255,26 @@ namespace GMS.QLKH
             this.Controls.Add(this.btnLuu);
             this.Controls.Add(this.fg);
             this.Controls.Add(this.TenKhachHang);
-            this.Controls.Add(this.lbLoaiKhachHang);
             this.Controls.Add(this.cmbLoaiKhachHang);
-            this.Controls.Add(this.lbTenKhachHang);
-            this.Name = "frmDM_KhachHang_Test_";
+            this.Name = "frmDM_KhachHang_Test";
             this.Text = "Khách hàng chi tiết";
             this.Load += new System.EventHandler(this.frmDM_KhachHang_Test__Load);
             ((System.ComponentModel.ISupportInitialize)(this.TenKhachHang.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lbLoaiKhachHang.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cmbLoaiKhachHang.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ucSearchLookupEdit1View)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lbTenKhachHang.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.fg)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
 
         private VSCM.Base.Controls.ucTextBox TenKhachHang;
-        private VSCM.Base.Controls.ucTextBox lbLoaiKhachHang;
         private VSCM.Base.Controls.ucSearchLookupEdit cmbLoaiKhachHang;
         private DevExpress.XtraGrid.Views.Grid.GridView ucSearchLookupEdit1View;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn1;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn2;
-        private VSCM.Base.Controls.ucTextBox lbTenKhachHang;
         private VSCM.Base.Controls.ucFlexGrid fg;
         private VSCM.Base.Controls.ucButton btnLuu;
         private VSCM.Base.Controls.ucButton btnHuy;
@@ -308,5 +282,7 @@ namespace GMS.QLKH
         private VSCM.Base.Controls.ucButton btnXoa;
         private VSCM.Base.Controls.ucButton btnXacNhan;
         private VSCM.Base.Controls.ucButton btnHuyXacNhan;
+        private VSCM.Base.Controls.ucLabel lbLoaiKhachHang;
+        private VSCM.Base.Controls.ucLabel lbTenKhachHang;
     }
 }

@@ -231,6 +231,7 @@ namespace GMS.QLKH
             DataTable dt = fg.ToDataTable(false, VSCM.Base.Controls.ucFlexGrid.ToDatatableValue.Value);
 
             DataRow[] editRows = dt.Select("IsEdit = 1");
+
             if (editRows.Count() > 0)
             {
                 dt = editRows.CopyToDataTable();
@@ -355,7 +356,13 @@ namespace GMS.QLKH
         private void HandleHoanThanhHoacHuyUpdate()
         {
             SetButtonDefault();
-            LoadFg();
+            DataTable dt = fg.ToDataTable(false, VSCM.Base.Controls.ucFlexGrid.ToDatatableValue.Value);
+            DataRow[] editRows = dt.Select("IsEdit = 1");
+            DataRow[] deleteRows = dt.Select("IsEdit = 2");
+            if (editRows.Count() > 0 || deleteRows.Count() > 0)
+            {
+                LoadFg();
+            }
         }
 
 
