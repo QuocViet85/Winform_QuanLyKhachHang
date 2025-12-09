@@ -79,8 +79,9 @@ namespace GMS.QLKH
         private void LoadDataMap()
         {
             /*
-                - ComboLoaderHelper.LoadDataMap để tạo ComboBox đổ xuống cho cột của ucGridView.
-                - ComboLoaderHelper.LoadDataMap dựa vào DataTable để tạo ComboBox.
+             * Chức năng của ComboLoaderHelper:
+                1. Tạo giá trị hiển thị khác với giá trị thực của cột
+                2. Tạo ComboBox đổ xuống cho cột của ucGridView dựa vào DataTable.
              */
 
             DataTable dtTrangThai = new DataTable();
@@ -406,22 +407,28 @@ namespace GMS.QLKH
                     fg.Rows.Remove(fg.Rows.Count - 1);
                 }else
                 {
+                    List<Row> removeRows = new List<Row>();
                     for (int i = cellRangeSelected.TopRow; i <= cellRangeSelected.BottomRow; i ++)
                     {
-                        Row rowRemove = fg.Rows[i];
-                        if (rowRemove.IsNode) continue;
+                        Row selectedRow = fg.Rows[i];
+                        if (selectedRow.IsNode) continue;
 
                         if (string.IsNullOrEmpty(fg.GetDataDisplay(i, "ID_KhachHang")) || fg.GetIntValue(i, "ID_KhachHang") == 0)
                         {
-                            fg.Rows.Remove(i);
+                            removeRows.Add(selectedRow);
                         }else
                         {
                             if (fg.GetIntValue(i, "ID_KhachHang") > 0)
                             {
-                                fg.Rows[i].Visible = false;
+                                selectedRow.Visible = false;
                                 fg[i, "IsEdit"] = 2;
                             }
                         }
+                    }
+
+                    foreach (Row removeRow in removeRows)
+                    {
+                        fg.Rows.Remove(removeRow);
                     }
                 }
             }
@@ -463,11 +470,6 @@ namespace GMS.QLKH
         private void btnPheDuyet_Click(object sender, EventArgs e)
         {
             SetTrangThaiKhachHang(DM_KhachHang_Test_TrangThai.PheDuyet);
-        }
-
-        private void cmbLoaiKhachHang_EditValueChanged(object sender, EventArgs e)
-        {
-
         }
 
         private void fg_Click(object sender, EventArgs e)

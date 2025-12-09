@@ -53,10 +53,17 @@
     <Compile Include="Classes\clsConnectSql.cs" />
     <Compile Include="Classes\clsDM_KhachHang_Test.cs" />
     <Compile Include="Classes\clsDM_KhachHang_Test_Extension.cs" />
+    <Compile Include="Classes\clsDM_Kho.cs" />
+    <Compile Include="Classes\clsDM_Kho_Extension.cs" />
     <Compile Include="Classes\clsDM_LoaiKhachHang.cs" />
     <Compile Include="Classes\clsDM_LoaiKhachHang_Extension.cs" />
+    <Compile Include="Classes\clsDM_Thung.cs" />
+    <Compile Include="Classes\clsDM_Thung_Extension.cs" />
+    <Compile Include="Classes\clsKeHoachHoanThien.cs" />
+    <Compile Include="Classes\clsKeHoachHoanThien_Extension.cs" />
+    <Compile Include="Classes\clsMaHang.cs" />
+    <Compile Include="Classes\clsMaHang_Extension.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -2,5 +2,6 @@ GMS.QLKH/bin
 GMS.QLKH/obj
 GMS.DataAccess.DHSX/bin
 GMS.DataAccess.DHSX/obj
-.vs/
+./vs
 SQL
+packages/Newtonsoft.Json.13.0.1

@@ -16,7 +16,7 @@ namespace GMS.QLKH
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmDM_KhachHang_Test_Main());
+            Application.Run(new formLap_KeHoach_To_HoanThien());
         }
     }
 }

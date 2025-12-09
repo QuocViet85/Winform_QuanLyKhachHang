@@ -83,6 +83,9 @@
       <HintPath>..\..\GMS.SystemModule.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.13.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="PresentationCore" />
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
@@ -109,6 +112,12 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="formLap_KeHoach_To_HoanThien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formLap_KeHoach_To_HoanThien.Designer.cs">
+      <DependentUpon>formLap_KeHoach_To_HoanThien.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmDM_KhachHang_Test.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -121,23 +130,26 @@
     <Compile Include="frmDM_KhachHang_Test_Main.Designer.cs">
       <DependentUpon>frmDM_KhachHang_Test_Main.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmDM_Thung_Test_Main.cs">
+    <Compile Include="frmDM_Thung.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmDM_Thung_Test_Main.Designer.cs">
-      <DependentUpon>frmDM_Thung_Test_Main.cs</DependentUpon>
+    <Compile Include="frmDM_Thung.Designer.cs">
+      <DependentUpon>frmDM_Thung.cs</DependentUpon>
     </Compile>
     <Compile Include="Helpers\ComboLoaderHelper.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="formLap_KeHoach_To_HoanThien.resx">
+      <DependentUpon>formLap_KeHoach_To_HoanThien.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmDM_KhachHang_Test.resx">
       <DependentUpon>frmDM_KhachHang_Test.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmDM_KhachHang_Test_Main.resx">
       <DependentUpon>frmDM_KhachHang_Test_Main.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmDM_Thung_Test_Main.resx">
-      <DependentUpon>frmDM_Thung_Test_Main.cs</DependentUpon>
+    <EmbeddedResource Include="frmDM_Thung.resx">
+      <DependentUpon>frmDM_Thung.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -149,6 +161,7 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

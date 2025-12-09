@@ -55,7 +55,8 @@ namespace GMS.QLKH
             // 
             this.TenKhachHang.FieldGroup = "";
             this.TenKhachHang.FieldName = "TenKhachHang";
-            this.TenKhachHang.Location = new System.Drawing.Point(3, 44);
+            this.TenKhachHang.Location = new System.Drawing.Point(2, 34);
+            this.TenKhachHang.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.TenKhachHang.Name = "TenKhachHang";
             this.TenKhachHang.Properties.Appearance.BackColor = System.Drawing.SystemColors.Window;
             this.TenKhachHang.Properties.Appearance.Options.UseBackColor = true;
@@ -67,7 +68,7 @@ namespace GMS.QLKH
             this.TenKhachHang.Properties.LookAndFeel.UseDefaultLookAndFeel = false;
             this.TenKhachHang.Properties.Name = "fProperties";
             this.TenKhachHang.Properties.Tag = "TenKhachHang";
-            this.TenKhachHang.Size = new System.Drawing.Size(235, 38);
+            this.TenKhachHang.Size = new System.Drawing.Size(186, 29);
             this.TenKhachHang.TabIndex = 9;
             this.TenKhachHang.EditValueChanged += new System.EventHandler(this.TenKhachHang_EditValueChanged);
             // 
@@ -75,8 +76,8 @@ namespace GMS.QLKH
             // 
             this.cmbLoaiKhachHang.FieldGroup = "";
             this.cmbLoaiKhachHang.FieldName = "";
-            this.cmbLoaiKhachHang.Location = new System.Drawing.Point(244, 45);
-            this.cmbLoaiKhachHang.Margin = new System.Windows.Forms.Padding(5);
+            this.cmbLoaiKhachHang.Location = new System.Drawing.Point(192, 34);
+            this.cmbLoaiKhachHang.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cmbLoaiKhachHang.Name = "cmbLoaiKhachHang";
             this.cmbLoaiKhachHang.Properties.Appearance.BackColor = System.Drawing.SystemColors.Window;
             this.cmbLoaiKhachHang.Properties.Appearance.Options.UseBackColor = true;
@@ -91,7 +92,7 @@ namespace GMS.QLKH
             this.cmbLoaiKhachHang.Properties.NullText = "";
             this.cmbLoaiKhachHang.Properties.PopupView = this.ucSearchLookupEdit1View;
             this.cmbLoaiKhachHang.Properties.ValueMember = "ID_LoaiKhachHang";
-            this.cmbLoaiKhachHang.Size = new System.Drawing.Size(240, 36);
+            this.cmbLoaiKhachHang.Size = new System.Drawing.Size(188, 28);
             this.cmbLoaiKhachHang.TabIndex = 7;
             // 
             // ucSearchLookupEdit1View
@@ -99,7 +100,7 @@ namespace GMS.QLKH
             this.ucSearchLookupEdit1View.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
             this.gridColumn1,
             this.gridColumn2});
-            this.ucSearchLookupEdit1View.DetailHeight = 546;
+            this.ucSearchLookupEdit1View.DetailHeight = 418;
             this.ucSearchLookupEdit1View.FocusRectStyle = DevExpress.XtraGrid.Views.Grid.DrawFocusRectStyle.RowFocus;
             this.ucSearchLookupEdit1View.Name = "ucSearchLookupEdit1View";
             this.ucSearchLookupEdit1View.OptionsSelection.EnableAppearanceFocusedCell = false;
@@ -109,16 +110,20 @@ namespace GMS.QLKH
             // 
             this.gridColumn1.Caption = "ID_LoaiKhachHang";
             this.gridColumn1.FieldName = "ID_LoaiKhachHang";
+            this.gridColumn1.MinWidth = 15;
             this.gridColumn1.Name = "gridColumn1";
+            this.gridColumn1.Width = 56;
             // 
             // gridColumn2
             // 
             this.gridColumn2.Caption = "gridColumn2";
             this.gridColumn2.CustomizationCaption = "Tên";
             this.gridColumn2.FieldName = "TenLoaiKhachHang";
+            this.gridColumn2.MinWidth = 15;
             this.gridColumn2.Name = "gridColumn2";
             this.gridColumn2.Visible = true;
             this.gridColumn2.VisibleIndex = 0;
+            this.gridColumn2.Width = 56;
             // 
             // fg
             // 
@@ -128,14 +133,15 @@ namespace GMS.QLKH
             this.fg.FocusRect = C1.Win.C1FlexGrid.FocusRectEnum.Heavy;
             this.fg.Font = new System.Drawing.Font("Tahoma", 8.25F);
             this.fg.KeyActionTab = C1.Win.C1FlexGrid.KeyActionEnum.MoveAcross;
-            this.fg.Location = new System.Drawing.Point(3, 88);
+            this.fg.Location = new System.Drawing.Point(2, 67);
+            this.fg.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.fg.Name = "fg";
             this.fg.Rows.Count = 1;
             this.fg.Rows.DefaultSize = 23;
             this.fg.Rows.MinSize = 20;
             this.fg.SelectionMode = C1.Win.C1FlexGrid.SelectionModeEnum.CellRange;
             this.fg.ShowCellLabels = true;
-            this.fg.Size = new System.Drawing.Size(920, 457);
+            this.fg.Size = new System.Drawing.Size(690, 350);
             this.fg.StyleInfo = resources.GetString("fg.StyleInfo");
             this.fg.TabIndex = 10;
             // 
@@ -143,10 +149,9 @@ namespace GMS.QLKH
             // 
             this.btnLuu.Appearance.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLuu.Appearance.Options.UseFont = true;
-            this.btnLuu.Location = new System.Drawing.Point(3, 552);
-            this.btnLuu.Margin = new System.Windows.Forms.Padding(4);
+            this.btnLuu.Location = new System.Drawing.Point(2, 422);
             this.btnLuu.Name = "btnLuu";
-            this.btnLuu.Size = new System.Drawing.Size(118, 33);
+            this.btnLuu.Size = new System.Drawing.Size(88, 25);
             this.btnLuu.TabIndex = 11;
             this.btnLuu.Text = "&Lưu";
             // 
@@ -154,10 +159,9 @@ namespace GMS.QLKH
             // 
             this.btnHuy.Appearance.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnHuy.Appearance.Options.UseFont = true;
-            this.btnHuy.Location = new System.Drawing.Point(129, 552);
-            this.btnHuy.Margin = new System.Windows.Forms.Padding(4);
+            this.btnHuy.Location = new System.Drawing.Point(97, 422);
             this.btnHuy.Name = "btnHuy";
-            this.btnHuy.Size = new System.Drawing.Size(118, 33);
+            this.btnHuy.Size = new System.Drawing.Size(88, 25);
             this.btnHuy.TabIndex = 12;
             this.btnHuy.Text = "&Hủy";
             // 
@@ -165,10 +169,9 @@ namespace GMS.QLKH
             // 
             this.btnCapNhat.Appearance.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCapNhat.Appearance.Options.UseFont = true;
-            this.btnCapNhat.Location = new System.Drawing.Point(3, 552);
-            this.btnCapNhat.Margin = new System.Windows.Forms.Padding(4);
+            this.btnCapNhat.Location = new System.Drawing.Point(2, 422);
             this.btnCapNhat.Name = "btnCapNhat";
-            this.btnCapNhat.Size = new System.Drawing.Size(118, 33);
+            this.btnCapNhat.Size = new System.Drawing.Size(88, 25);
             this.btnCapNhat.TabIndex = 13;
             this.btnCapNhat.Text = "&Cập nhật";
             this.btnCapNhat.Click += new System.EventHandler(this.ucButton2_Click);
@@ -177,10 +180,9 @@ namespace GMS.QLKH
             // 
             this.btnXoa.Appearance.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnXoa.Appearance.Options.UseFont = true;
-            this.btnXoa.Location = new System.Drawing.Point(129, 552);
-            this.btnXoa.Margin = new System.Windows.Forms.Padding(4);
+            this.btnXoa.Location = new System.Drawing.Point(97, 422);
             this.btnXoa.Name = "btnXoa";
-            this.btnXoa.Size = new System.Drawing.Size(118, 33);
+            this.btnXoa.Size = new System.Drawing.Size(88, 25);
             this.btnXoa.TabIndex = 14;
             this.btnXoa.Text = "&Xóa";
             // 
@@ -188,10 +190,9 @@ namespace GMS.QLKH
             // 
             this.btnXacNhan.Appearance.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnXacNhan.Appearance.Options.UseFont = true;
-            this.btnXacNhan.Location = new System.Drawing.Point(255, 552);
-            this.btnXacNhan.Margin = new System.Windows.Forms.Padding(4);
+            this.btnXacNhan.Location = new System.Drawing.Point(191, 422);
             this.btnXacNhan.Name = "btnXacNhan";
-            this.btnXacNhan.Size = new System.Drawing.Size(118, 33);
+            this.btnXacNhan.Size = new System.Drawing.Size(88, 25);
             this.btnXacNhan.TabIndex = 15;
             this.btnXacNhan.Text = "&Xác nhận";
             // 
@@ -199,10 +200,9 @@ namespace GMS.QLKH
             // 
             this.btnHuyXacNhan.Appearance.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnHuyXacNhan.Appearance.Options.UseFont = true;
-            this.btnHuyXacNhan.Location = new System.Drawing.Point(381, 552);
-            this.btnHuyXacNhan.Margin = new System.Windows.Forms.Padding(4);
+            this.btnHuyXacNhan.Location = new System.Drawing.Point(286, 422);
             this.btnHuyXacNhan.Name = "btnHuyXacNhan";
-            this.btnHuyXacNhan.Size = new System.Drawing.Size(118, 33);
+            this.btnHuyXacNhan.Size = new System.Drawing.Size(88, 25);
             this.btnHuyXacNhan.TabIndex = 16;
             this.btnHuyXacNhan.Text = "&Hủy XN";
             // 
@@ -216,10 +216,11 @@ namespace GMS.QLKH
             this.lbLoaiKhachHang.Appearance.Options.UseForeColor = true;
             this.lbLoaiKhachHang.FieldGroup = "";
             this.lbLoaiKhachHang.FieldName = "";
-            this.lbLoaiKhachHang.Location = new System.Drawing.Point(244, 7);
+            this.lbLoaiKhachHang.Location = new System.Drawing.Point(192, 5);
+            this.lbLoaiKhachHang.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.lbLoaiKhachHang.Name = "lbLoaiKhachHang";
-            this.lbLoaiKhachHang.Padding = new System.Windows.Forms.Padding(50, 5, 50, 5);
-            this.lbLoaiKhachHang.Size = new System.Drawing.Size(240, 31);
+            this.lbLoaiKhachHang.Padding = new System.Windows.Forms.Padding(38, 4, 38, 4);
+            this.lbLoaiKhachHang.Size = new System.Drawing.Size(188, 25);
             this.lbLoaiKhachHang.TabIndex = 20;
             this.lbLoaiKhachHang.Text = "Loại khách hàng";
             // 
@@ -233,18 +234,19 @@ namespace GMS.QLKH
             this.lbTenKhachHang.Appearance.Options.UseForeColor = true;
             this.lbTenKhachHang.FieldGroup = "";
             this.lbTenKhachHang.FieldName = "";
-            this.lbTenKhachHang.Location = new System.Drawing.Point(3, 7);
+            this.lbTenKhachHang.Location = new System.Drawing.Point(2, 5);
+            this.lbTenKhachHang.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.lbTenKhachHang.Name = "lbTenKhachHang";
-            this.lbTenKhachHang.Padding = new System.Windows.Forms.Padding(50, 5, 50, 5);
-            this.lbTenKhachHang.Size = new System.Drawing.Size(235, 31);
+            this.lbTenKhachHang.Padding = new System.Windows.Forms.Padding(38, 4, 38, 4);
+            this.lbTenKhachHang.Size = new System.Drawing.Size(186, 25);
             this.lbTenKhachHang.TabIndex = 19;
             this.lbTenKhachHang.Text = "Tên khách hàng";
             // 
             // frmDM_KhachHang_Test
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(935, 588);
+            this.ClientSize = new System.Drawing.Size(701, 450);
             this.Controls.Add(this.lbLoaiKhachHang);
             this.Controls.Add(this.lbTenKhachHang);
             this.Controls.Add(this.btnHuyXacNhan);
@@ -256,6 +258,7 @@ namespace GMS.QLKH
             this.Controls.Add(this.fg);
             this.Controls.Add(this.TenKhachHang);
             this.Controls.Add(this.cmbLoaiKhachHang);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "frmDM_KhachHang_Test";
             this.Text = "Khách hàng chi tiết";
             this.Load += new System.EventHandler(this.frmDM_KhachHang_Test__Load);
